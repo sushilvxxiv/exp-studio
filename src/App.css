@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+}
+
+.Index{
+  display: flex;
+}
+.menu-part {
+  flex: 20%;
+  height: 100vh;
+}
+.home-part {
+  flex: 80%;
+  height: 94vh;
+  border-bottom: solid 1px gray;
+  background-color: whitesmoke;
+  background-image: url('./images/whiteBg.webp');
+}
+
+/* Menu Styles */
+.menu-page {
+  display: flex;
+}
+.page-text{
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.gpt-text{
+  /* height: fit-content; */
+  /* text-align: center; */
+  font-size: 19rem;
+}
+.menu-options-part {
+  flex: 20%;
+  height: 100vh;
+  border-right: solid 1px gray;
+}
+.menu-collapsable-part {
+  flex: 80%;
+  height: 100vh;
+  border-right: solid 1px gray;
+}
+.menu-page-links{
+  text-decoration: none;
+}
+
+
+/* Options Styles */
+.options-page {
+  text-align: center;
+}
+.options-icon{
+  text-decoration: none;
+}
+.options-icon-name{
+  font-size: .9rem;
+}
+.gpt-text{
+  font-size: 1.5rem;
+}
+.options-list {
+  margin: 1rem auto auto auto;
+  cursor: pointer;
+}
+.selected{
+  color: blue;
+}
+
+.chatgpt-icon-div{
+  outline: solid 1px black;
+  margin: 5px;
+}
+.chatgpt-icon-div:hover{
+  background-color: gray;
+}
+.chatgpt-icon {
+  width: 3rem;
+  margin: 1rem;
+}
+
+/* Data Styles */
+.data-page {
+  
+}
+
+
+/* Bottombar Styles */
+.bottombar{
+  position: absolute;
+  bottom: 0;
+  /* height: fit-content; */
+  z-index: 1;
+}
+.bottombar-parent{
+  width: 100%;
+  margin: auto;
+}
+.bottombar-container{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.bottombar-list{
+  list-style: none;
+  font-size: 0.75rem;
+  margin: auto 1.5rem auto auto;
+  text-align: center;
+}
+.bottombar-icons{
+  font-size: 30rem;
+}
+
+/* Collapsable Page */
+.collapsable-page-heading{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.collapsable-page-elemtree{
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.element-tree{
+  width: fit-content;
+  margin: 1rem auto auto 1rem;
+}
+
+/* Graph Icons */
+.graph-icons-component{
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0.4rem;
+  grid-gap: 5px;
+  z-index: 2;
+  background-color: lightgray;
+}
+.graph-icon{
+  cursor: pointer;
+}
+.graph-icon-image{
+  width: 45px;
+  height: 40px;
+}
+
+/* Modal Content */
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5rem;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  height: 80vh;
+  overflow: auto;
+}
+
+.close-button {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  padding: 0.6rem;
+}
+.collapsable-tree{
+  
+}
